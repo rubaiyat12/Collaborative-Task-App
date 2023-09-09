@@ -15,10 +15,16 @@ const LoginPage = () => {
   //submit function
   const handleSubmit = (e) =>{
     e.preventDefault();
-    if(email === userName && password === userPassword){
+     if(email && password){
+      toast.success('Please add Your user email and password or see the readme file for default one')
+      navigate('/profile')
+
+    }
+    else if(email === userName && password === userPassword){
       toast.success('Login Success')
       navigate('/profile')
     }
+    
     else{
       toast.error('Invalid Email or Password')
     }

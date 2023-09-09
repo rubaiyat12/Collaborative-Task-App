@@ -12,6 +12,8 @@ export default function Todo() {
       }
   },[])
 
+
+
   const addTask = (e) => {
     if (task) {
       const newTask = { id: new Date().getTime().toString(), title: task };
@@ -40,6 +42,7 @@ export default function Todo() {
     <div className="container content row">
       <h1 className="mt-3 text-white">Task App</h1>
       <div className="col-8">
+      
         <input
           name="task"
           type="text"
@@ -54,7 +57,7 @@ export default function Todo() {
           className="btn btn-primary form-control material-icons"
           onClick={addTask}
         >
-          Assign the work
+          Assign the Task
         </button>
       </div>
       <div className="badge">
