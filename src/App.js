@@ -6,6 +6,8 @@ import LoginPage from "./Pages/LoginPage";
 import UsersList from "./Pages/UserList";
 import HomePage from "./Pages/HomePage";
 import Footer from "./Components/Footer";
+import Task from "./Pages/Task";
+
 function App() {
   return (
     <>
@@ -24,6 +26,8 @@ function App() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/profile" element={<HomePage />} />
         <Route path="/users" element={<UsersList />} />
+        <Route path="/task" element= {<Task />} />
+       
       </Routes>
       <Footer />
     </>

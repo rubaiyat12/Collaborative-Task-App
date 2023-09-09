@@ -8,7 +8,7 @@ const Header = () => {
         <div className="container">
           <span className="navbar-brand">
             {" "}
-            <FaHouseUser /> User Managment System{" "}
+            <FaHouseUser /> Collaborative Task Management {" "}
           </span>
 
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -20,6 +20,11 @@ const Header = () => {
             <li className="nav-item">
               <Link className="nav-link " to="/users">
                 Users
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link " to="/task">
+                Task
               </Link>
             </li>
             <li className="nav-item">
